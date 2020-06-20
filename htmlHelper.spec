@@ -4,7 +4,7 @@ block_cipher = None
 
 
 a = Analysis(['htmlHelper.py'],
-             pathex=['C:\\Users\\User\\Documents\\Python Scripts\\html-helper'],
+             pathex=['C:\\Users\\User\\Documents\\Python Scripts\\notion-htmlHelper'],
              binaries=[],
              datas=[],
              hiddenimports=[],
