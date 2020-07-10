@@ -22,6 +22,8 @@ for dirPath, dirNames, fileNames in os.walk(base):
         if name.endswith(".html"):
             path = os.path.join(base, dirPath, name)
             soup = BeautifulSoup(open(path, "r", encoding='utf-8'), "html.parser")
+            for x in soup.find_all('pre'):
+                x['class'] = 'prettyprint'
             tmp_soup = BeautifulSoup(open(t_path, "r", encoding="utf-8"), "html.parser")
             
             div = tmp_soup.find('div', class_= "text-center")
